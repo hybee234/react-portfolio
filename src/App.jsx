@@ -1,11 +1,12 @@
 import { Outlet } from 'react-router-dom';
-import Nav from './components/NavTabs';
-
+import NavTabs from './components/NavTabs';
+import Background from './components/Background';
 
 function App() {
     return (
         <div>
-            <Nav />      
+            <Background /> 
+            <NavTabs />                 
             <main className= "bg-purple-400 mx-3">
                 <Outlet />
             </main>
