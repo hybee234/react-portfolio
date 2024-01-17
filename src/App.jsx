@@ -6,7 +6,7 @@ function App() {
     return (
         <div>
             <Nav />      
-            <main className="mx-3">
+            <main className= "bg-purple-400 mx-3">
                 <Outlet />
             </main>
         </div>
