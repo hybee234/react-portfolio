@@ -1,44 +1,28 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function NavTabs() {
-  const currentPage = useLocation().pathname;
 
-  return (
-    <ul className="text-xl text-center bg-green-400">
-      <li className="text-xl">
-        <Link
-          to="/"
-          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
-        >
-          Home
-        </Link>
-      </li>
-      <li className="text-3xl">
-        <Link
-          to="/About"
-          className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}
-        >
-          About
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/Blog"
-          className={currentPage === '/Blog' ? 'nav-link active' : 'nav-link'}
-        >
-          Blog
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link
-          to="/Contact"
-          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
-        >
-          Contact
-        </Link>
-      </li>
-    </ul>
-  );
+    return (
+        <header className="flex flex-wrap justify-center">         
+            <div className="heading">
+                <a href="/About" className="text-4xl sm:text-5xl">Hybee's Portfolio</a>
+            </div>                     
+            <div className="navtab">                
+                <Link to="/About" className="nav-item">
+                    <div>About</div>
+                </Link>
+                <Link to="/Portfolio" className="nav-item">
+                    <div>Portfolio</div>
+                </Link>
+                <Link to="/Contact" className="nav-item">
+                    <div>Contact </div>
+                </Link>
+                <Link to="/Resume" className="nav-item">
+                    <div>Resume </div>
+                </Link>
+            </div>                    
+        </header>
+    );
 }
 
 export default NavTabs;

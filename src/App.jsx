@@ -7,7 +7,7 @@ function App() {
         <div>
             <Background /> 
             <NavTabs />                 
-            <main className= "bg-purple-400 mx-3">
+            <main className= "bg-filter border-2 p-5 m-3">
                 <Outlet />
             </main>
         </div>
