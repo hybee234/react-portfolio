@@ -51,11 +51,32 @@ bg-image: -100
 
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/*********/
+/* Pages */
+/*********/
+
+.page {
+    width: 60%;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
 }
 
+/* Heading 1 */
+
+h1 {
+    font-size: 3.2rem;
+    line-height: 1.1;
+    padding: 10px;
+}
+
+/* Paragraph */
+
+p {
+    font-size: 1rem;
+    padding: 10px;
+}
 
 /********************/
 /* Background Image */
