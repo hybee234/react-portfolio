@@ -22,13 +22,13 @@ bg-image: -100
     --fern-green: rgba(98, 139, 72, 1);
 
     /*variables*/   
-    /* --text: rgba(223, 223, 223, 0.80); */
+
     --text: var(--antiflash-white);
     --modaltext: rgba(244, 244, 255, 1);
     --tableborder: rgb(223, 223, 223);
     --texthighlight: rgb(138, 172, 250);
     --linkbackground: rgb(86, 86, 86);
-    --linkactive: var(--fern-green);
+    --linkactive: var(--texthighlight);
     --buttontext: rgb(244, 244, 255);    
     --textwinein: rgb(22, 163, 74);
     --textwineout: rgb(220, 38, 38);
@@ -65,16 +65,6 @@ h2 {
     line-height: 1.1;
     padding: 10px;
 }
-
-/* Paragraph */
-/* p {
-    font-size: 1rem;
-    padding: 10px;
-} */
-
-/* main {
-    height: calc(100vh - 380px);
-} */
 
 /********************/
 /* Background Image */
@@ -130,9 +120,9 @@ header {
     transition: ease-in-out .3s;
 }
 
-/*********/
+/********/
 /* Logo */
-/*********/
+/********/
 
 .logo {
     transition: ease-in-out .3s;
@@ -205,6 +195,7 @@ header {
 .footer {
     max-width: 300px;
     margin-top: 50px;
+    margin-bottom: 50px;
     margin-inline: auto;
     text-align: center;         
     font-size: 0.75rem;
@@ -222,6 +213,7 @@ header {
     justify-content: center;
     margin-top: 20px;
     margin-inline: auto;
+    width: 80%;
 }
 
 .apps-item {
@@ -230,6 +222,32 @@ header {
     max-width: 600px;
     padding: 10px;
     margin: 10px;   
+}
+
+/*********/
+/* Links */
+/*********/
+
+/* .link {
+    font-size: 1.5rem;
+} */
+
+.link:hover {
+    color: var(--linkactive);
+    text-decoration: underline;
+
+}
+
+.link-img {
+    border: 2px solid black;
+}
+
+.link-img:hover {
+    border: 2px solid var(--linkactive);
+}
+
+.no-link {
+    color: var(--old-rose)
 }
 
 /*******************************/
@@ -294,5 +312,7 @@ header {
     .logo {        
         width: 80px;
     }
-
+    .apps-container {
+        width: 90%;
+    }
 }
