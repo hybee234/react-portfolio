@@ -1,23 +1,25 @@
 export default function Contact() {
     return (
-        <div className="page bg-filter">
-            <h1>Contact Page</h1>
-            <p>
-                Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-                molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-                magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-                efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-                mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-                posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-                faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-                ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-                dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-                conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-                rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-            </p>
-            <p>
-                Need to build a form here that can be filled out - no need to store data anywhere
-            </p>
+        <div className="page">
+        <div className="page-header bg-filter">
+            <h1>Contact Me</h1>
         </div>
+        
+        <div className = "bg-filter flex flex-wrap justify-center align-center mt-20">
+            <h1 className="w-1/2">Hello! I'm Hy </h1>
+            <h1>Welcome to my portfolio!</h1> 
+            <div className = "p-5 m-5">
+                
+            </div>
+            <div className = "p-5 m-5">
+                <p>
+                    Thanks for dropping by 
+                    Enthusiastic, budding developer who has just gone through an intense 6 month bootcamp! 
+                    Who you are and what you're droppingHow you got here
+                    Where are you looking to go next
+                </p>
+            </div>
+        </div>
+    </div>
     );
 }

@@ -49,7 +49,6 @@ bg-image: -100
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
-
 }
 
 /* Heading 1 */
@@ -72,7 +71,6 @@ h2 {
 
 .bg-image {
     background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.0) ), url("/assets/images/REM B&W Back.jpg");
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -188,6 +186,11 @@ header {
     margin: auto;
 }
 
+.page-header {
+    width: 50%;
+    margin: auto;
+}
+
 /**********/
 /* Footer */
 /**********/
@@ -287,24 +290,39 @@ header {
     .page {        
         width: 95%;
     }
+    .page-header {
+        width: 70%;
+    }
 }
 
 /******************************/
 /* Media Query LESS THAN 640 /
 /******************************/
 @media (max-width: 640px) {
+
+    header {
+        padding: 5px;
+    }
+    .bg-filter{
+        padding: 3px;
+    }
     .navtab {
         flex-wrap: wrap;
         justify-content: center;
-        width: 70%;
+        width: 100%;
         padding-right: 0px;
-        min-width: 285px;
+        /* min-width: 285px; */
     }
-    .nav-item {        
-        width: 45%;;
+    .nav-item {
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        margin: 3px;
+        border-radius: 5px;
     }
     .nav-item p {
-        font-size: 1rem;
+        font-size: 1.00rem;
     }
     .page {        
         width: 95%;
@@ -314,5 +332,14 @@ header {
     }
     .apps-container {
         width: 90%;
+    }
+}
+
+/****************************/
+/* Media Query LESS THAN 400 /
+/****************************/
+@media (max-width: 400px) {
+    .nav-item {        
+        width: 45%;;
     }
 }

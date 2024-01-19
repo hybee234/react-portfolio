@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaGithub } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
+import { FaStackOverflow } from "react-icons/fa6";
 
 function Footer() {
     return (
@@ -28,6 +29,13 @@ function Footer() {
                         <div className="p-3 link" >
                             <Link to="https://www.linkedin.com/in/hy-l-25020953/" target="_blank">
                                 <FaLinkedin />
+                            </Link>
+                        </div>
+                    </span>
+                    <span>
+                        <div className="p-3 link" >
+                            <Link to="https://stackoverflow.com/users/23088153/hybee" target="_blank">
+                                <FaStackOverflow />
                             </Link>
                         </div>
                     </span>

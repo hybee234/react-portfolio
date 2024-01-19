@@ -64,7 +64,7 @@ const apps = [
     return (
         
             <div>
-                <div className="page bg-filter">
+                <div className="page-header bg-filter">
                     <h1>Portfolio </h1>
                 </div>
                 <Applications apps={apps} />                
