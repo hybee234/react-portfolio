@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link, useLocation } from 'react-router-dom';
-import logo from './../assets/images/Logo.png'
+import logo from '/assets/images/Logo.png'
 
 function NavTabs() {
 
