@@ -61,10 +61,13 @@ h1 {
 }
 
 /* Paragraph */
-
-p {
+/* p {
     font-size: 1rem;
     padding: 10px;
+} */
+
+main {
+    height: calc(100vh - 380px);
 }
 
 /********************/
@@ -72,9 +75,10 @@ p {
 /********************/
 
 .bg-image {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1) ), url("./assets/images/REM B&W Back.jpg");  
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1) ), url("./assets/images/REM B&W Back.jpg");
+    /* background-image: url("./assets/images/REM B&W Back.jpg"); */
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
     width: 100%;
@@ -91,7 +95,11 @@ p {
 /******************************************/
 
 .bg-filter {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.7); 
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    transition: ease-in-out .3s;
 }
 
 
@@ -104,16 +112,26 @@ p {
 /***********/
 header {
     align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 .heading {
-    justify-items: center;
+    justify-content: left;
     padding-left: 100px;
-    padding-top: 20px;
-    width: 50%;
+    width: 40%;
     font-weight: 600;
-    transition: ease-in-out .5s;
+    transition: ease-in-out .3s;
 }
+
+/*********/
+/* Logo */
+/*********/
+
+.logo {
+    transition: ease-in-out .3s;
+}
+
 
 /**********/
 /* NavTab */
@@ -122,26 +140,30 @@ header {
 .navtab {
     display: flex;
     justify-content: right;
-    width: 50%;
+    padding-right: 100px;
+    width: 60%;
     /* border: 2px solid green; */
-    transition: ease-in-out .5s;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    transition: ease-in-out .3s;    
 }
 
 .nav-item {
-    font-size: 1.25rem;
     padding-top: 3px;
     padding-right: 1rem;
     padding-bottom: 3px;
     padding-left: 1rem;
-    margin-top: 10px;
-    margin-right: 5px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    transition-duration: 200ms;
+    margin: 1px;
+    transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 600;
     border-radius: 0.75rem;
     text-align: center;
+    transition: ease-in-out .3s;    
+}
+
+.nav-item p {
+    font-size: 1.5rem;
 }
 
 .nav-item:hover {
@@ -166,33 +188,43 @@ header {
 /*********/
 
 .page {
-    width: 60%;
+    width: 80%;
     margin: auto;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    transition: ease-in-out .5s;
 }
 
-/******************************/
+/**********/
+/* Footer */
+/**********/
+
+.footer {
+    width: 30%;
+    text-align: center;         
+    font-size: 0.75rem;
+    justify-content: center;  
+    align-items: center;
+}
+
+
+/*******************************/
 /* Media Query LESS THAN 1280px /
-/******************************/
+/*******************************/
 @media (max-width: 1280px) {
     .navtab {
         justify-content: center;
         width: 100%;
         padding-right: 0px;
-        margin-top: 0px;
-        transition: ease-in-out .5s;
     }
     .heading {
         justify-content: center;
         width: 100%;
         padding-left: 0px;
-        transition: ease-in-out .5s;
+
     }
     .page {        
-        width: 70%;
+        width: 85%;
+    }
+    .logo {        
+        width: 175px;
     }
 }
 
@@ -201,9 +233,11 @@ header {
 /*****************************/
 @media (max-width: 1024px) {
     .page {        
-        width: 85%;
+        width: 90%
     }
-
+    .logo {        
+        width: 175px;
+    }
 }
 
 /******************************/
@@ -213,7 +247,9 @@ header {
     .page {        
         width: 95%;
     }
-
+    .logo {        
+        width: 175px;
+    }
 }
 
 /******************************/
@@ -230,10 +266,15 @@ header {
     .nav-item {        
         width: 45%;;
     }
-
+    .nav-item p {
+        font-size: 1rem;
+    }
     .page {        
         width: 95%;
-        padding: 0px;
+    }
+
+    .logo {        
+        width: 125px;
     }
 
 }
