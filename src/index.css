@@ -60,22 +60,28 @@ h1 {
     padding: 10px;
 }
 
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    padding: 10px;
+}
+
 /* Paragraph */
 /* p {
     font-size: 1rem;
     padding: 10px;
 } */
 
-main {
+/* main {
     height: calc(100vh - 380px);
-}
+} */
 
 /********************/
 /* Background Image */
 /********************/
 
 .bg-image {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1) ), url("./assets/images/REM B&W Back.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.0) ), url("./public/assets/images/REM B&W Back.jpg");
     
     background-position: center;
     background-repeat: no-repeat;
@@ -198,13 +204,37 @@ header {
 
 .footer {
     width: 375px;
-    margin: auto;
+    margin-top: 50px;
+    margin-inline: auto;
     text-align: center;         
     font-size: 0.75rem;
     justify-content: center;  
     align-items: center;
 }
 
+/******************/
+/* Portfolio page */
+/******************/
+
+.apps-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid red;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 20px;
+    margin-inline: auto;
+}
+
+.apps-item {
+    /* flex: 0 0 200px;    */
+    width: 800px;
+    /* border: 2px solid blue; */
+    padding: 10px;
+    margin: 10px;
+    
+}
 
 /*******************************/
 /* Media Query LESS THAN 1280px /

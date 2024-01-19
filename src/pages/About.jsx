@@ -1,4 +1,4 @@
-import picture from './../assets/images/Profile.jpg'
+import picture from '/assets/images/Profile.jpg'
 
 export default function About() {
     return (

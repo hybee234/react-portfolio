@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import githublogo from './../assets/images/github logo.png'
-import xlogo from './../assets/images/x logo.png'
-import linkedinlogo from './../assets/images/linkedIn logo.png'
+import githublogo from   '/assets/images/githublogo.png'
+import xlogo from        '/assets/images/xlogo.png'
+import linkedinlogo from '/assets/images/linkedInlogo.png'
 
 function Footer() {
     return (
