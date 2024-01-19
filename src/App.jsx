@@ -3,6 +3,7 @@ import NavTabs from './components/NavTabs';
 import Background from './components/Background';
 
 function App() {
+
     return (
         <div>
             <Background /> 

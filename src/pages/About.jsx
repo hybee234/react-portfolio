@@ -1,14 +1,14 @@
+import picture from './../assets/images/chiikawa.gif'
+
 export default function About() {
     return (
         <div className="page bg-filter">
-            <h1>About Page</h1>
+            <h1>About Me</h1>
+            <div>
+                <img className = "m-auto" src={picture}></img>
+            </div>
             <p>
-                Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-                Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-                mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-                lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-                imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-                in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+                Enthusiastic, budding developer who has just gone through an intense 6 month bootcamp! 
             </p>
         </div>
     );
