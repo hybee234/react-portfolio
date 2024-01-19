@@ -19,7 +19,8 @@ const apps = [
         title: "Social Network Server",
         description: "A MongoDB server ready to serve a social network front end",
         image: "/assets/images/socialnetwork.png",
-        link_deploy: "https://hybee-my-wine-cellar-5b9958ea6eee.herokuapp.com/login",
+        technologies: "MongoDB, Mongoose, Express.Js, Node.js",
+        link_deploy: "",
         link_github: "https://github.com/hybee234/social-network-server",
     },
     {
@@ -42,7 +43,7 @@ const apps = [
     },
     {
         id: 5,
-        title: "Just Aother Text Editor",
+        title: "Just Another Text Editor",
         description: "Just another text editor, a progressive web application",
         image: "/assets/images/jate.png",
         technologies: "Node.js, Express, Webpack, Heroku",
