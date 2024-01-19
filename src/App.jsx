@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import NavTabs from './components/NavTabs';
 import Background from './components/Background';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -8,9 +9,10 @@ function App() {
         <div>
             <Background /> 
             <NavTabs />                 
-            <main className= "p-5 m-3 text-center">
+            <main className= "text-center">
                 <Outlet />
             </main>
+            <Footer />
         </div>
     )
 }
