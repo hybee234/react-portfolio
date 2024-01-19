@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link, useLocation } from 'react-router-dom';
+import logo from './../assets/images/Logo.png'
 
 function NavTabs() {
 
@@ -8,21 +9,21 @@ function NavTabs() {
 
     return (
         <header className="flex flex-wrap justify-center">         
-            <div className="heading">
-                <a href="/" className="text-4xl sm:text-5xl">Hybee's Portfolio</a>
+            <div className="flex flex-wrap heading">
+                <Link to="/" className="text-4xl sm:text-5xl flex"><img className = "logo" width="200" src={logo}></img> </Link>
             </div>                     
             <div className="navtab">                
                 <Link to="/" className={currentPage === '/' ? 'nav-item nav-active' : 'nav-item'}>
-                    <div>About Me</div>
+                    <p>About Me</p>
                 </Link>
                 <Link to="/Portfolio" className={currentPage === '/Portfolio' ? 'nav-item nav-active' : 'nav-item'}>
-                    <div>Portfolio</div>
+                    <p>Portfolio</p>
                 </Link>
                 <Link to="/Contact" className={currentPage === '/Contact' ? 'nav-item nav-active' : 'nav-item'}>
-                    <div>Contact </div>
+                    <p>Contact </p>
                 </Link>
                 <Link to="/Resume" className={currentPage === '/Resume' ? 'nav-item nav-active' : 'nav-item'}>
-                    <div>Resume </div>
+                    <p>Resume </p>
                 </Link>
             </div>                    
         </header>
