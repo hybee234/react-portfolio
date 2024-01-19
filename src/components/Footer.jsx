@@ -1,7 +1,4 @@
 import { Link } from 'react-router-dom';
-import githublogo from '/assets/images/githublogo.png'
-import xlogo from '/assets/images/xlogo.png'
-import linkedinlogo from '/assets/images/linkedInlogo.png'
 
 import { FaGithub } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
