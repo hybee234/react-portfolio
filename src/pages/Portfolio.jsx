@@ -67,7 +67,9 @@ const apps = [
                 <div className="page-header bg-filter">
                     <h1>Portfolio </h1>
                 </div>
-                <Applications apps={apps} />                
+                <div className="mt-5">
+                    <Applications apps={apps} />                
+                </div>
             </div>
         );
 }

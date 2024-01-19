@@ -7,7 +7,7 @@ export default function About() {
                 <h1>About Me</h1>
             </div>
             
-            <div className = "bg-filter flex flex-wrap justify-center align-center mt-20">
+            <div className = "bg-filter flex flex-wrap justify-center align-center mt-10">
                 <h1 className="w-1/2">Hello! I'm Hy </h1>
                 <h1>Welcome to my portfolio!</h1> 
                 <div className = "p-5 m-5">
