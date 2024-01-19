@@ -2,8 +2,7 @@ import { FaGithub } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 export default function Applications(props) {
-    const { apps } = props 
-    console.log ("apps", apps)
+    const { apps } = props    
     
     return (
         <div className="apps-container">

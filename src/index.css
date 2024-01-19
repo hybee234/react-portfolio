@@ -15,7 +15,7 @@ bg-image: -100
 :root {
 
     /* SCSS RGB */
-    --onyx: rgba(67, 68, 71, 1);
+    --onyx: rgb(215, 215, 215);
     --blue-munsell: rgba(4, 139, 168, 1);
     --antiflash-white: rgba(231, 236, 239, 1);
     --old-rose: rgba(170, 118, 124, 1);
@@ -251,6 +251,50 @@ header {
 
 .no-link {
     color: var(--old-rose)
+}
+
+
+/****************/
+/* Contact Form */
+/****************/
+
+.contact-page {
+    max-width: 600px;
+}
+
+.form-field {
+    width: 90%;
+    background-color: var(--onyx);
+    border: 2px solid rgb(229 231 235);
+    color: rgb(24 24 27 );
+    border-radius: 0.75rem;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 10px;
+}
+
+.form-field:hover {
+    background-color: rgb(206, 217, 240);
+    border: 2px solid var(--texthighlight)
+}
+
+.form-field:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border: 2px solid var(--texthighlight);
+    background-color: rgb(206, 217, 240);
+}
+
+.button-color {
+    background-color: var(--linkbackground);
+    color: var(--buttontext);
+    border-radius: 0.75rem;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-color:hover {
+    background-color: rgba(50, 50, 50, 1);
 }
 
 /*******************************/
