@@ -1,18 +1,17 @@
 import { Link } from 'react-router-dom';
-import githublogo from   '/assets/images/githublogo.png'
-import xlogo from        '/assets/images/xlogo.png'
+import githublogo from '/assets/images/githublogo.png'
+import xlogo from '/assets/images/xlogo.png'
 import linkedinlogo from '/assets/images/linkedInlogo.png'
 
 function Footer() {
     return (
         <div className = "footer">
-            
             <div className = "bg-filter" >
                 <p>Last updated 19/1/2024</p>
                 <div className="flex justify-center">
                     <span>
                         <div className="p-3">
-                            <Link to="https://twitter.com/hklim5"  target="_blank">
+                            <Link to="https://twitter.com/hklim5" target="_blank">
                                 <img width="40" src={xlogo}></img>   
                             </Link>
                         </div>

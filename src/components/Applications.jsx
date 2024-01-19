@@ -26,10 +26,10 @@ export default function Applications(props) {
                             </div>                            
                             <p>{apps.technologies}</p>
                             <div className="p-3 flex justify-center">
-                                <Link className="px-3" to={apps.link_github} target="_blank">
-                                    <img width="30" src={githublogo}></img>
+                                <Link className="p-3" to={apps.link_github} target="_blank">
+                                    <img className="portfolio-image" width="30" src={githublogo}></img>
                                 </Link>
-                                <Link className="px-3" to={apps.link_deploy} target="_blank"> Visit Website </Link>
+                                <Link className="p-3" to={apps.link_deploy} target="_blank"> Visit Website </Link>
                             </div>
 
                         </div>

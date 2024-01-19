@@ -576,18 +576,8 @@ video {
   padding: 0.75rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .text-center {
   text-align: center;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -671,7 +661,7 @@ h2 {
 /********************/
 
 .bg-image {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.0) ), url("./public/assets/images/REM B&W Back.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.0) ), url("/assets/images/REM B&W Back.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -694,7 +684,7 @@ h2 {
 .bg-filter {
   background-color: rgba(0, 0, 0, 0.7);
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
   transition: ease-in-out .3s;
 }
@@ -804,7 +794,7 @@ header {
 /**********/
 
 .footer {
-  width: 375px;
+  max-width: 300px;
   margin-top: 50px;
   margin-inline: auto;
   text-align: center;
@@ -822,18 +812,15 @@ header {
 .apps-container {
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid red;
-  align-items: center;
   justify-content: center;
-  width: 80%;
   margin-top: 20px;
   margin-inline: auto;
 }
 
 .apps-item {
-  /* flex: 0 0 200px;    */
-  width: 800px;
-  /* border: 2px solid blue; */
+  flex: 1 0 cal(33% - 5rem);
+  min-width: 300px;
+  max-width: 600px;
   padding: 10px;
   margin: 10px;
 }
@@ -859,10 +846,6 @@ header {
   .page {
     width: 85%;
   }
-
-  .logo {
-    width: 175px;
-  }
 }
 
 /*****************************/
@@ -874,10 +857,6 @@ header {
   .page {
     width: 90%
   }
-
-  .logo {
-    width: 175px;
-  }
 }
 
 /******************************/
@@ -888,10 +867,6 @@ header {
 @media (max-width: 768px) {
   .page {
     width: 95%;
-  }
-
-  .logo {
-    width: 175px;
   }
 }
 
@@ -922,7 +897,7 @@ header {
   }
 
   .logo {
-    width: 125px;
+    width: 80px;
   }
 }
 
