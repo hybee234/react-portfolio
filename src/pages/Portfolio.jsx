@@ -20,7 +20,6 @@ const apps = [
         description: "A MongoDB server ready to serve a social network front end",
         image: "/assets/images/socialnetwork.png",
         technologies: "MongoDB, Mongoose, Express.Js, Node.js",
-        link_deploy: "",
         link_github: "https://github.com/hybee234/social-network-server",
     },
     {
