@@ -76,7 +76,7 @@ main {
 
 .bg-image {
     background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1) ), url("./assets/images/REM B&W Back.jpg");
-    /* background-image: url("./assets/images/REM B&W Back.jpg"); */
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -197,7 +197,8 @@ header {
 /**********/
 
 .footer {
-    width: 30%;
+    width: 375px;
+    margin: auto;
     text-align: center;         
     font-size: 0.75rem;
     justify-content: center;  
