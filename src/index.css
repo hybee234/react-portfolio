@@ -303,6 +303,10 @@ header {
     color: var(--textwarning)
 }
 
+.button-form-error {
+    background-color: var(--textwarning);
+    border-radius: 0.75rem;    
+}
 
 /*******************************/
 /* Media Query LESS THAN 1280px /
