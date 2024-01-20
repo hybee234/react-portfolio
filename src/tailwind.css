@@ -548,6 +548,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .m-5 {
   margin: 1.25rem;
 }
@@ -575,6 +579,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .w-1\/2 {
@@ -678,7 +686,7 @@ bg-image: -100
   --linkactive: var(--texthighlight);
   --buttontext: rgb(244, 244, 255);
   --textwinein: rgb(22, 163, 74);
-  --textwineout: rgb(220, 38, 38);
+  --textwarning: rgb(220, 38, 38);
   --deletebutton: rgb(223, 55, 55);
   --deletebuttonhover: rgb(185, 28, 28);
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -957,6 +965,11 @@ header {
 
 .button-color:hover {
   background-color: rgba(50, 50, 50, 1);
+}
+
+.required {
+  visibility: hidden;
+  color: var(--textwarning)
 }
 
 /*******************************/
