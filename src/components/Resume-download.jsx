@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 export default function ResumeDownload() {
 
     return (
-        <div className="bg-filter mt-10 flex flex-wrap justify-center max-w-48 m-auto">
+        <div className="bg-filter mt-5 flex flex-wrap justify-center max-w-48 m-auto">
             <p className="w-full"> Download my resume:</p>            
             
             {/* {Use anchor element to fetch file from server rather than JS} */}
