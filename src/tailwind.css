@@ -601,10 +601,6 @@ video {
   max-width: 12rem;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
-}
-
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -649,34 +645,9 @@ video {
   line-height: 2.5rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -753,7 +724,7 @@ h2 {
 /********************/
 
 .bg-image {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.0) ), url("/assets/images/REM B&W Back.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url("/assets/images/Cracked Leather.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -774,7 +745,7 @@ h2 {
 /******************************************/
 
 .bg-filter {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   border: 2px solid black;
   border-radius: 10px;
   padding: 10px;
@@ -799,11 +770,10 @@ header {
   padding: 20px;
 }
 
-.heading {
+.logo-container {
   justify-content: left;
   padding-left: 100px;
   width: 40%;
-  font-weight: 600;
   transition: ease-in-out .3s;
 }
 
@@ -842,7 +812,7 @@ header {
   margin: 1px;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  font-weight: 600;
+  /* font-weight: 600; */
   border-radius: 0.75rem;
   text-align: center;
   transition: ease-in-out .3s;
@@ -1047,7 +1017,7 @@ header {
     padding-right: 0px;
   }
 
-  .heading {
+  .logo-container {
     justify-content: center;
     width: 100%;
     padding-left: 0px;
@@ -1196,38 +1166,18 @@ header {
 }
 
 @media (min-width: 640px) {
-  .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .sm\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px) {
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1235,16 +1185,6 @@ header {
 }
 
 @media (min-width: 1024px) {
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;

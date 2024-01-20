@@ -9,7 +9,7 @@ function NavTabs() {
 
     return (
         <header className="flex flex-wrap">         
-            <div className="flex flex-wrap heading">
+            <div className="flex flex-wrap logo-container">
                 <Link to="/" className="text-4xl sm:text-5xl flex"><img className = "logo" width="125" src={logo}></img> </Link>
             </div>                     
             <div className="navtab">
