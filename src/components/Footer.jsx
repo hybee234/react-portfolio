@@ -10,7 +10,7 @@ function Footer() {
         <div className = "footer">
             <div className = "bg-filter" >
                 <p>Last updated 19/1/2024</p>
-                <div className="flex justify-center text-5xl">
+                <div className="flex justify-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
                     <span>
                         <div className="p-3 link">
                             <Link to="https://twitter.com/hklim5" target="_blank">

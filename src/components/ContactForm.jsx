@@ -4,7 +4,7 @@ import { useState } from 'react';
 let nameOK;
 let emailOK;
 let messageOK;
-const regex = new RegExp('^([a-z0-9_.-]+)@([a-z0-9_.-]+)\.([a-z0-9_.-]+)$')
+const regex = new RegExp('^([a-zA-Z0-9_.-]+)@([a-zA-Z0-9_.-]+)\.([a-zA-Z0-9_.-]+)$')
 
 function ContactForm() {
 
@@ -52,18 +52,18 @@ function ContactForm() {
                 document.getElementById('email-required').style.visibility = "visible";
                 emailOK = 0;
             }
-            // If email value is OK - hide message - check regex here
+            // If email value is OK - check regex here
             if (value) {
                 // console.log ("Email is populated")                
                 //Test value against regex
                 if (regex.test(value)) {
                     //Hide message if pass regex test
-                    // console.log ("regex test", regex.test(value))
+                    console.log ("regex test", regex.test(value))
                     document.getElementById('email-required').style.visibility = "hidden";
                     emailOK = 1;
                 } else {
                     //Show message if fail regex text
-                    // console.log ("regex test", regex.test(value))
+                    console.log ("regex test", regex.test(value))
                     document.getElementById('email-required').style.visibility = "visible";
                     emailOK = 0;
                 }
@@ -109,7 +109,6 @@ function ContactForm() {
 
         } else {
             // Fields are not OK 
-            
             // console.log("Fields not OK")            
             document.getElementById('submit-button').classList.add("button-form-error")
             document.getElementById('submit-button').classList.remove("button-color")
@@ -150,7 +149,7 @@ function ContactForm() {
                     placeholder="Email"
                     required
                 />
-                <p id="email-required" className="required">Please enter you email address</p>
+                <p id="email-required" className="required">Please enter a valid email address</p>
             </div>
             <div>
                 <label className="block my-2 text-xs font-bold tracking-wide modal-text-color uppercase"> Your Message </label>
