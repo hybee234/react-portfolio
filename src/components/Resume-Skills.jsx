@@ -6,12 +6,12 @@ export default function Skills(props) {
     const {skills} = props
 
     return (                        
-        <div className = "resume-page m-auto mt-10">
+        <div className = "m-auto mt-10">
             {
                 skills.map( (skills) => {
                     return (
                         <div className = "bg-filter m-2" key={skills.id}>
-                            <h2>{skills.type}</h2>
+                            <h2>{skills.type}</h2>                            
                             <div className="flex flex-wrap justify-center">                                        
                                 {
                                     skills.skill.map( (skill) => {

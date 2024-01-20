@@ -1,4 +1,5 @@
 import Skills from './../components/Resume-Skills'
+import ResumeDownload from './../components/Resume-download'
 
 export default function Resume() {
 
@@ -163,7 +164,8 @@ export default function Resume() {
         <div className="page">
             <div className="page-header bg-filter ">
                 <h1 className="m-auto">Skills</h1>
-            </div>                        
+            </div>
+            <ResumeDownload />
             <Skills skills={skills}/>
         </div>
     )

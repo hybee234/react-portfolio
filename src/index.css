@@ -322,7 +322,7 @@ header {
 .skill-icon {
     width: 100px;
     height: 100px;
-    transition: ease-in-out .3s;
+    /* transition: ease-in-out .3s; */
     border: 2px transparent var(--linkactive);
     border-radius: 0.75rem;
 }
