@@ -1,5 +1,5 @@
 
-import Applications from "./../components/Applications";
+import Applications from "./../components/Portfolio-Apps";
 
 export default function Portfolio() {
 
