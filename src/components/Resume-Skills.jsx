@@ -6,40 +6,40 @@ export default function Skills(props) {
     const {skills} = props
 
     return (                        
-        <div className = "bg-filter resume-page m-auto mt-10">
+        <div className = "resume-page m-auto mt-10">
             {
                 skills.map( (skills) => {
                     return (
-                        <div key={skills.id}>
-                            <h2 >{skills.type}</h2>
-                            <div className="flex justify-center">                                        
+                        <div className = "bg-filter m-2" key={skills.id}>
+                            <h2>{skills.type}</h2>
+                            <div className="flex flex-wrap justify-center">                                        
                                 {
                                     skills.skill.map( (skill) => {
                                         return (
                                             // Check if white background is used
                                             skill.background ?
                                             (
-                                                <div className="p-5" key={skill.id}>
+                                                <div className="skill-card" key={skill.id}>
                                                     <Link to={skill.url} target="_blank">
-                                                        <Icon icon={skill.iconify_component} className="skill-icon skill-bg" />                                                        
+                                                        <Icon icon={skill.iconify_component} className="skill-icon skill-bg m-auto" />                                                        
                                                     </Link>
-                                                    <p>{skill.title}</p>
+                                                    <p className="skill-text">{skill.title}</p>
                                                 </div>
                                             ) : (
-                                                <div className="p-5" key={skill.id}>
+                                                <div className="skill-card" key={skill.id}>
                                                     <Link to={skill.url} target="_blank">
-                                                        <Icon icon={skill.iconify_component} className="skill-icon" />
+                                                        <Icon icon={skill.iconify_component} className="skill-icon m-auto" />
                                                         {/* Check if img is used instead of iconify */}
                                                         {
                                                             skill.img ?
                                                             (
-                                                            <img src={skill.img} className="skill-icon"></img>
+                                                            <img src={skill.img} className="skill-icon m-auto"></img>
                                                             ) : (
                                                             <span></span>
                                                             )
                                                         }
                                                     </Link>
-                                                    <p>{skill.title}</p>
+                                                    <p className="skill-text">{skill.title}</p>
                                                 </div>
                                             )
                                         )

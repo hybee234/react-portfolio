@@ -35,7 +35,7 @@ export default function Resume() {
                     id: "50",
                     iconify_component: "devicon:bootstrap-wordmark",
                     url: "https://getbootstrap.com/",
-                    title: "Bootstrap CSS",
+                    title: "Bootstrap",
                 },
                 {                    
                     id: "60",
@@ -59,14 +59,14 @@ export default function Resume() {
                     id: "200",
                     iconify_component: "devicon:express-wordmark",
                     url: "https://html.com/html5/",
-                    title: "Express.JS",
+                    title: "Express",
                     background: "white"
                 },
                 {                    
                     id: "300",
                     img: "/assets/images/inquirer.svg",
                     url: "https://www.npmjs.com/package/inquirer",
-                    title: "Inquirer.js",
+                    title: "Inquirer",
                 },
                 {                    
                     id: "400",
@@ -162,7 +162,7 @@ export default function Resume() {
         
         <div className="page">
             <div className="page-header bg-filter ">
-                <h1>Resume</h1>
+                <h1 className="m-auto">Skills</h1>
             </div>                        
             <Skills skills={skills}/>
         </div>

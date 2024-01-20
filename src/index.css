@@ -16,10 +16,8 @@ bg-image: -100
 
     /* SCSS RGB */
     --onyx: rgb(215, 215, 215);
-    --blue-munsell: rgba(4, 139, 168, 1);
     --antiflash-white: rgba(231, 236, 239, 1);
     --old-rose: rgba(170, 118, 124, 1);
-    --fern-green: rgba(98, 139, 72, 1);
 
     /*variables*/   
 
@@ -225,6 +223,7 @@ header {
 .page {
     width: 80%;
     margin: auto;
+    transition: ease-in-out .3s; 
 }
 
 .page-header {
@@ -311,6 +310,11 @@ header {
 /* Resume Page */
 /***************/
 
+.skill-card{
+    padding: 20px;
+    transition: ease-in-out .3s;
+}
+
 .skill-bg {
     background-color: white;
 }
@@ -318,8 +322,15 @@ header {
 .skill-icon {
     width: 100px;
     height: 100px;
+    transition: ease-in-out .3s;
+    border: 2px transparent var(--linkactive);
+    border-radius: 0.75rem;
 }
 
+.skill-icon:hover {
+    background-color: var(--linkbackground);
+    border: 2px solid var(--linkactive);
+}
 
 /*******************************/
 /* Media Query LESS THAN 1280px /
@@ -338,9 +349,15 @@ header {
     .page {        
         width: 85%;
     }
+    .skill-card{
+        padding: 15px;
+    }
     .skill-icon {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
+    }
+    .skill-text {
+        width: 90px;
     }
 }
 
@@ -353,9 +370,12 @@ header {
     .page {        
         width: 90%        
     }
+    .skill-card{
+        padding: 10px;
+    }
     .skill-icon {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
     }
 }
 
@@ -369,9 +389,12 @@ header {
     .page-header {
         width: 70%;
     }
+    .skill-card{
+        padding: 5px;
+    }
     .skill-icon {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -414,8 +437,8 @@ header {
         width: 90%;
     }
     .skill-icon {
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
     }
 }
 
