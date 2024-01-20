@@ -7,6 +7,7 @@ let messageOK;
 const regex = new RegExp('^([a-z0-9_.-]+)@([a-z0-9_.-]+)\.([a-z0-9_.-]+)$')
 
 function ContactForm() {
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -32,13 +33,13 @@ function ContactForm() {
         if (name === "name") {
             // If name value is null - show message
             if (!value) {
-                console.log ("Name is required")
+                // console.log ("Name is required")
                 document.getElementById('name-required').style.visibility = "visible";
                 nameOK = 0;
             }
             // If name value is OK - hide message
             if (value) {
-                console.log ("Name is OK")
+                // console.log ("Name is OK")
                 document.getElementById('name-required').style.visibility = "hidden";
                 nameOK = 1;
             }
@@ -47,22 +48,22 @@ function ContactForm() {
         } else if (name === "email") {            
             // If email value is null - show message
             if (!value) {
-                console.log ("Email is required")
+                // console.log ("Email is required")
                 document.getElementById('email-required').style.visibility = "visible";
                 emailOK = 0;
             }
             // If email value is OK - hide message - check regex here
             if (value) {
-                console.log ("Email is populated")                
+                // console.log ("Email is populated")                
                 //Test value against regex
                 if (regex.test(value)) {
                     //Hide message if pass regex test
-                    console.log ("regex test", regex.test(value))
+                    // console.log ("regex test", regex.test(value))
                     document.getElementById('email-required').style.visibility = "hidden";
                     emailOK = 1;
                 } else {
                     //Show message if fail regex text
-                    console.log ("regex test", regex.test(value))
+                    // console.log ("regex test", regex.test(value))
                     document.getElementById('email-required').style.visibility = "visible";
                     emailOK = 0;
                 }
@@ -72,13 +73,13 @@ function ContactForm() {
         } else if (name === "message") {
             // If message length lt 10 - show message
             if (value.length < 10) {
-                console.log ("Message more than 10 chars is required")
+                // console.log ("Message more than 10 chars is required")
                 document.getElementById('message-required').style.visibility = "visible";
                 messageOK = 0
             }          
             // If message is OK - hide message
             if (value.length >= 10) {
-                console.log ("Message is OK")
+                // console.log ("Message is OK")
                 document.getElementById('message-required').style.visibility = "hidden";
                 messageOK = 1
             }            
@@ -89,15 +90,15 @@ function ContactForm() {
         e.preventDefault();
 
         //Check if form is ready to submit
-        console.log("nameOK", nameOK, "emailOK", emailOK, "messageOK", messageOK)
+        // console.log("nameOK", nameOK, "emailOK", emailOK, "messageOK", messageOK)
 
         if (nameOK === 1 && emailOK === 1 && messageOK === 1) {
             // Fields are OK
             
-            console.log("Fields are OK")
+            // console.log("Fields are OK")
             // document.getElementById('submit-button').disabled = "false"
-            document.getElementById('submit-button').classList.remove("button-form-error")
             document.getElementById('submit-button').classList.add("button-color")
+            document.getElementById('submit-button').classList.remove("button-form-error")
             document.getElementById('button-message').style.visibility = "hidden";
 
             //Insert submit actions here
@@ -109,7 +110,7 @@ function ContactForm() {
         } else {
             // Fields are not OK 
             
-            console.log("Fields not OK")            
+            // console.log("Fields not OK")            
             document.getElementById('submit-button').classList.add("button-form-error")
             document.getElementById('submit-button').classList.remove("button-color")
             document.getElementById('button-message').style.visibility = "visible";
@@ -120,11 +121,11 @@ function ContactForm() {
     return (
         <div>
             <h2>
-                Complete this contact form:
+                Send me a message:
             </h2>
             <form className="form modal-content m-auto" onSubmit={handleFormSubmit}>
             <div>
-                <label className="block my-2 text-xs font-bold tracking-wide modal-text-color uppercase"> Name </label>
+                <label className="block my-2 text-xs font-bold tracking-wide modal-text-color uppercase"> Your Name </label>
                 <input
                     className="form-field"
                     value={name}
@@ -138,7 +139,7 @@ function ContactForm() {
                 <p id="name-required" className="required">A name is required</p>
             </div>
             <div>
-                <label className="block my-2 text-xs font-bold tracking-wide modal-text-color uppercase"> Email </label>
+                <label className="block my-2 text-xs font-bold tracking-wide modal-text-color uppercase"> Your Email </label>
                 <input
                     className="form-field"
                     value={email}
@@ -149,10 +150,10 @@ function ContactForm() {
                     placeholder="Email"
                     required
                 />
-                <p id="email-required" className="required">Please enter a email address</p>
+                <p id="email-required" className="required">Please enter you email address</p>
             </div>
             <div>
-                <label className="block my-2 text-xs font-bold tracking-wide modal-text-color uppercase"> Message </label>
+                <label className="block my-2 text-xs font-bold tracking-wide modal-text-color uppercase"> Your Message </label>
                 <textarea
                     className="form-field"
                     value={message}

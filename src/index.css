@@ -177,20 +177,6 @@ header {
     text-align: center;
 }
 
-/*********/
-/* Pages */
-/*********/
-
-.page {
-    width: 80%;
-    margin: auto;
-}
-
-.page-header {
-    width: 50%;
-    margin: auto;
-}
-
 /**********/
 /* Footer */
 /**********/
@@ -204,27 +190,6 @@ header {
     font-size: 0.75rem;
     justify-content: center;  
     align-items: center;
-}
-
-/******************/
-/* Portfolio page */
-/******************/
-
-.apps-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
-    margin-inline: auto;
-    width: 80%;
-}
-
-.apps-item {
-    flex: 1 0 cal(33% - 5rem);
-    min-width: 300px;
-    max-width: 600px;
-    padding: 10px;
-    margin: 10px;   
 }
 
 /*********/
@@ -253,6 +218,40 @@ header {
     color: var(--old-rose)
 }
 
+/*********/
+/* Pages */
+/*********/
+
+.page {
+    width: 80%;
+    margin: auto;
+}
+
+.page-header {
+    width: 50%;
+    margin: auto;
+}
+
+/******************/
+/* Portfolio page */
+/******************/
+
+.apps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-inline: auto;
+    width: 80%;
+}
+
+.apps-item {
+    flex: 1 0 cal(33% - 5rem);
+    min-width: 300px;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px;   
+}
 
 /****************/
 /* Contact Form */
@@ -307,6 +306,15 @@ header {
     background-color: var(--textwarning);
     border-radius: 0.75rem;    
 }
+
+/***************/
+/* Resume Page */
+/***************/
+
+
+
+
+
 
 /*******************************/
 /* Media Query LESS THAN 1280px /

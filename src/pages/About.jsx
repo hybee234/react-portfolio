@@ -7,19 +7,21 @@ export default function About() {
                 <h1>About Me</h1>
             </div>
             
-            <div className = "bg-filter flex flex-wrap justify-center align-center mt-10">
-                <h1 className="w-1/2">Hello! I'm Hy </h1>
-                <h1>Welcome to my portfolio!</h1> 
-                <div className = "p-5 m-5">
-                    <img className = "m-auto" src={picture} width="300px"></img>
-                </div>
-                <div className = "p-5 m-5">
-                    <p>
-                        Thanks for dropping by 
-                        Enthusiastic, budding developer who has just gone through an intense 6 month bootcamp! 
-                        Who you are and what you're droppingHow you got here
-                        Where are you looking to go next
-                    </p>
+            <div className = "bg-filter justify-center align-center mt-10">
+                <h2 className="w-full">Hello! I'm Hy </h2>
+                <h2 className="w-full">Welcome to my portfolio!</h2> 
+                <div className ="flex flexwrap">
+                    <div className = "flex-1 p-2 m-2 min-w-96">
+                        <img src={picture} width="500px"></img>
+                    </div>
+                    <div className = "flex-1 p-2 m-2">
+                        <p>
+                            Thanks for dropping by 
+                            Enthusiastic, budding developer who has just gone through an intense 6 month bootcamp! 
+                            Who you are and what you're droppingHow you got here
+                            Where are you looking to go next
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

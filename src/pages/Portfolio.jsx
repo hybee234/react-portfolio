@@ -60,16 +60,17 @@ const apps = [
     },
 ]
 
-
     return (
         
-            <div>
+        <div>
+            <div className="page">
                 <div className="page-header bg-filter">
                     <h1>Portfolio </h1>
                 </div>
-                <div className="mt-5">
-                    <Applications apps={apps} />                
-                </div>
+            </div>
+            <div className="mt-5">
+                <Applications apps={apps} />                
+            </div>
             </div>
         );
 }
