@@ -311,9 +311,14 @@ header {
 /* Resume Page */
 /***************/
 
+.skill-bg {
+    background-color: white;
+}
 
-
-
+.skill-icon {
+    width: 100px;
+    height: 100px;
+}
 
 
 /*******************************/
@@ -333,6 +338,10 @@ header {
     .page {        
         width: 85%;
     }
+    .skill-icon {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 
@@ -342,7 +351,11 @@ header {
 /*****************************/
 @media (max-width: 1024px) {
     .page {        
-        width: 90%
+        width: 90%        
+    }
+    .skill-icon {
+        width: 70px;
+        height: 70px;
     }
 }
 
@@ -355,6 +368,10 @@ header {
     }
     .page-header {
         width: 70%;
+    }
+    .skill-icon {
+        width: 60px;
+        height: 60px;
     }
 }
 
@@ -395,6 +412,10 @@ header {
     }
     .apps-container {
         width: 90%;
+    }
+    .skill-icon {
+        width: 50px;
+        height: 50px;
     }
 }
 
