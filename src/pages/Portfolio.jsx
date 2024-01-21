@@ -10,9 +10,11 @@ const apps = [
         title: "My Wine Cellar",
         description: "An online cellar inventory management solution",
         image: "/assets/images/mywinecellar.png",
+        comment1: `User: admin@email.com Pass: 12345678`,
+        comment2: `User: user@email.com Pass: 12345678`,
         technologies: "MySQL, Sequelize, Express.Js, Handlebars.js, JawsDS, Tailwind CSS, Deployed on Heroku (Private)",
-        link_deploy: "https://hybee-my-wine-cellar-5b9958ea6eee.herokuapp.com/login",
-        link_github: "https://github.com/hybee234/my-wine-cellar",
+        link_deploy: "https://my-wine-cellar-non-prod-828d22547558.herokuapp.com/login",
+        // link_github: "https://github.com/hybee234/my-wine-cellar",
     },
     {
         id: 2,

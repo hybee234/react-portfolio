@@ -30,12 +30,22 @@ export default function Applications(props) {
                                     )                            
                                 }
                             </div>                            
+                            <p>{apps.comment1}</p>
+                            <p>{apps.comment2}</p>
                             <p>{apps.technologies}</p>
                             <div className="p-3 flex justify-center">
-                                <Link className="link p-3 text-4xl" to={apps.link_github} target="_blank">
-                                    <FaGithub />
-                                    {/* <img className="link" width="30" src={githublogo}></img> */}
-                                </Link>
+                                {
+                                    apps.link_github ?
+                                    (
+                                        <Link className="link p-3 text-4xl" to={apps.link_github} target="_blank">
+                                            <FaGithub />
+                                            {/* <img className="link" width="30" src={githublogo}></img> */}
+                                        </Link>
+                                    ) : (
+                                        
+                                        <p className="no-link flex p-3 text-2xl">Private Repo&nbsp;<FaGithub className="text-4xl"/></p>
+                                    )
+                                }
                                 {/* {Conditionally include hyperlink to live demo} */}
                                 {
                                     apps.link_deploy ?
