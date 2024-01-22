@@ -1,4 +1,5 @@
 import picture from '/assets/images/Profile.jpg'
+import { Link } from 'react-router-dom';
 
 export default function About() {
     return (
@@ -7,22 +8,23 @@ export default function About() {
                 <h1>About Me</h1>
             </div>
             
-            <div className = "bg-filter justify-center align-center mt-10">
-                <h2 className="w-full">Hello! I'm Hy </h2>
-                <h2 className="w-full">Welcome to my portfolio!</h2> 
-                <div className ="flex flexwrap">
-                    <div className = "p-2 m-2 min-w-96 border-2">
-                        <img src={picture} width="500px" className="m-auto"></img>
+            <div className = "about-me-page bg-filter justify-center mt-10">
+                <h2 className="w-full">Hello! My name is Hy and </h2>
+                <h2 className="w-full">I'm a full stack web developer</h2> 
+                <div className ="flex flex-wrap justify-center">
+                    <div className = "flex p-2 m-2 justify-start">
+                        <img src={picture} width="500px" className="about-me-profile-picture m-auto"></img>
                     </div>
-                    <div className = "p-2 m-2 border-2">
-                        <p>
-                            Thanks for dropping by 
-                            Enthusiastic, budding developer who has just gone through an intense 6 month bootcamp! 
-                            
-                            Who you are and what you're dring
-                            How you got here
-                            Where are you looking to go next
-                        </p>
+                    <div className = "about-me-text-container p-2 m-2 text-left">
+                        <p> Thank you for visiting my profile page!</p>
+                        <p> I will soon be completing an intense six-month Coding Bootcamp run by Monash University.</p>
+                        <p> I consider myself motivated, driven, methodical and meticulous in my work and take pride in excelling at problem solving to meet end-user needs.</p>
+                        <p> I would love the opportunity to put my skillset to use, I have a strong background in the Australian public health system with almost 20 years experience. I am passionate in Digital Health industry but I am also open to venturing outside my comfort zone.</p>
+                        
+                        <p> Please take a look around my portfolio and don't hesitate to contact me!  </p>
+                        <div className="text-center">
+                            <Link to="/Contact" className="link about-me-contact-me">Contact Me</Link> 
+                        </div>
                     </div>
                 </div>
             </div>
