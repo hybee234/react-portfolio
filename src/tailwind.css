@@ -593,10 +593,6 @@ video {
   width: 100%;
 }
 
-.min-w-96 {
-  min-width: 24rem;
-}
-
 .max-w-48 {
   max-width: 12rem;
 }
@@ -605,12 +601,12 @@ video {
   flex-wrap: wrap;
 }
 
-.justify-center {
-  justify-content: center;
+.justify-start {
+  justify-content: flex-start;
 }
 
-.border-2 {
-  border-width: 2px;
+.justify-center {
+  justify-content: center;
 }
 
 .p-2 {
@@ -629,6 +625,10 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -675,20 +675,20 @@ bg-image: -100
 :root {
   /* SCSS RGB */
   --onyx: rgb(215, 215, 215);
-  --antiflash-white: rgba(231, 236, 239, 1);
+  /* --antiflash-white: rgba(231, 236, 239, 1); */
   --old-rose: rgba(170, 118, 124, 1);
   /*variables*/
-  --text: var(--antiflash-white);
-  --modaltext: rgba(244, 244, 255, 1);
-  --tableborder: rgb(223, 223, 223);
+  --text: var(--onyx);
+  /* --modaltext: rgba(244, 244, 255, 1); */
+  /* --tableborder: rgb(223, 223, 223); */
   --texthighlight: rgb(138, 172, 250);
   --linkbackground: rgb(86, 86, 86);
   --linkactive: var(--texthighlight);
   --buttontext: rgb(244, 244, 255);
-  --textwinein: rgb(22, 163, 74);
-  --textwarning: rgb(220, 38, 38);
-  --deletebutton: rgb(223, 55, 55);
-  --deletebuttonhover: rgb(185, 28, 28);
+  /* --textwinein: rgb(22, 163, 74); */
+  /* --textwarning: rgb(220, 38, 38); */
+  /* --deletebutton: rgb(223, 55, 55); */
+  /* --deletebuttonhover: rgb(185, 28, 28); */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -899,6 +899,35 @@ header {
   margin: auto;
 }
 
+/*****************/
+
+/* About me page */
+
+/*****************/
+
+.about-me-page {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-me-profile-picture{
+  transition: ease-in-out .3s;
+}
+
+.about-me-text-container {
+  flex: 1 0 400px;
+  font-size: 1.5rem;
+}
+
+.about-me-text-container p{
+  margin-bottom: 15px;
+}
+
+.about-me-contact-me {
+  text-decoration: underline;
+}
+
 /******************/
 
 /* Portfolio page */
@@ -1039,6 +1068,10 @@ header {
   .skill-text {
     width: 90px;
   }
+
+  .profile-picture{
+    width: 400px;
+  }
 }
 
 /*****************************/
@@ -1058,6 +1091,10 @@ header {
   .skill-icon {
     width: 90px;
     height: 90px;
+  }
+
+  .profile-picture{
+    width: 300px;
   }
 }
 
@@ -1090,6 +1127,10 @@ header {
 
   h2 {
     font-size: 2.3rem;
+  }
+
+  .profile-picture{
+    width: 250px;
   }
 }
 
@@ -1151,6 +1192,10 @@ header {
 
   h2 {
     font-size: 2rem;
+  }
+
+  .profile-picture{
+    width: 200px;
   }
 }
 
