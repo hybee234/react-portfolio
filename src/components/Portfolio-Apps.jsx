@@ -25,7 +25,7 @@ export default function Applications(props) {
                                         </div>
                                     ) : (
                                         <div>
-                                            <img src={apps.image} className="link-img"></img>
+                                            <img src={apps.image}></img>
                                         </div>
                                     )                            
                                 }

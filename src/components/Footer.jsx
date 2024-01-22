@@ -8,8 +8,7 @@ import { FaStackOverflow } from "react-icons/fa6";
 function Footer() {
     return (
         <div className = "footer">
-            <div className = "bg-filter" >
-                <p>Last updated 19/1/2024</p>
+            <div className = "bg-filter" >                
                 <div className="flex justify-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
                     <span>
                         <div className="p-3 link">
@@ -40,6 +39,7 @@ function Footer() {
                         </div>
                     </span>
                 </div>
+                <p>Hybee January 2024</p>
             </div>
         </div>
     );
