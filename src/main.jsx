@@ -37,6 +37,10 @@ const router = createBrowserRouter([
             {
                 path: '/Resume',
                 element: <Resume />,
+            },
+            { //If all paths don't match then send user to About
+                path: '/*',
+                element: <About />,
             }
         ],
     },
