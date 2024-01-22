@@ -103,13 +103,13 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 Screeshot of About Me page
 <div align="center">
 
-![Screeshot of About Me page](./public/assets/images/screenshot1.png)
+![Screeshot of About Me page](./public/assets/images/aboutme.png)
 </div>
 
 Screenshot of Portfolio page
 <div align="center">
 
-![Screenshot of Portfolio page](./public/assets/images/screenshot2.png)
+![Screenshot of Portfolio page](./public/assets/images/portfolio.png)
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
