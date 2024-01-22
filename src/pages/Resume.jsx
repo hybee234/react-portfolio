@@ -84,13 +84,13 @@ export default function Resume() {
                 {
                     id: "6",
                     iconify_component: "devicon:sequelize",
-                    url: "https://sequelize.org/docs/v6/core-concepts/model-querying-basics/",
+                    url: "https://sequelize.org/",
                     title: "Seqeulize",
                 },
                 {
                     id: "7",
                     iconify_component: "devicon:mongodb-wordmark",
-                    url: "https://sequelize.org/docs/v6/core-concepts/model-querying-basics/",
+                    url: "https://www.mongodb.com/",
                     title: "MongoDB",
                     background: "yes",
                 },

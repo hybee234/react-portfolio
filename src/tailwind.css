@@ -686,7 +686,7 @@ bg-image: -100
   --linkactive: var(--texthighlight);
   --buttontext: rgb(244, 244, 255);
   /* --textwinein: rgb(22, 163, 74); */
-  /* --textwarning: rgb(220, 38, 38); */
+  --textwarning: rgb(220, 38, 38);
   /* --deletebutton: rgb(223, 55, 55); */
   /* --deletebuttonhover: rgb(185, 28, 28); */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -724,7 +724,7 @@ h2 {
 /********************/
 
 .bg-image {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url("/assets/images/Cracked Leather.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url("/assets/images/Graphite.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -745,7 +745,7 @@ h2 {
 /******************************************/
 
 .bg-filter {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   border: 2px solid black;
   border-radius: 10px;
   padding: 10px;
