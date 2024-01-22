@@ -349,13 +349,14 @@ header {
     width: 100px;
     height: 100px;
     /* transition: ease-in-out .3s; */
-    border: 2px transparent var(--linkactive);
+    padding:2px;
     border-radius: 0.75rem;
 }
 
 .skill-icon:hover {
     background-color: var(--linkbackground);
     border: 2px solid var(--linkactive);
+    padding: 0px
 }
 
 /*******************************/
