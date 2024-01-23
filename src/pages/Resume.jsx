@@ -59,7 +59,7 @@ export default function Resume() {
                 {                    
                     id: "2",
                     iconify_component: "devicon:express-wordmark",
-                    url: "https://html.com/html5/",
+                    url: "https://expressjs.com/",
                     title: "Express",
                     background: "white"
                 },

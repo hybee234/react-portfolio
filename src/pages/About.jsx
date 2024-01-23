@@ -19,7 +19,7 @@ export default function About() {
                         <p> Thank you for visiting my profile page!</p>
                         <p> I will soon be completing an intense six-month Coding Bootcamp run by Monash University.</p>
                         <p> I consider myself motivated, driven, methodical and meticulous in my work and take pride in excelling at problem solving to meet end-user needs.</p>
-                        <p> I would love the opportunityto put my skillset to use, I have a strong background in the Australian public health system with almost 20 years experience. I am passionate in Digital Health industry but I am also open to venturing outside my comfort zone.</p>                        
+                        <p> I would love the opportunityto put my skillset to use, I have a strong background in the Australian public health system with almost 20 years experience across clinical and digital health. While I am passionate in Digital Health, I am also open to venturing into new territory.</p>                        
                         <p> Please take a look around my portfolio and don't hesitate to contact me!  </p>
                         <div className="text-center">
                             <Link to="/Contact" className="link about-me-contact-me">Contact Me</Link> 
