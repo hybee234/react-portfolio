@@ -4,6 +4,20 @@ import Applications from "./../components/Portfolio-Apps";
 export default function Portfolio() {
 
 // Set up apps constant to pass through to Applications as props
+/*
+    Example entry
+    {
+        id: 1,
+        title: "Book Search Engine",
+        description: "A basic MERN stack application",
+        image: "/assets/images/MERN.png",
+        //comment1: 
+        //comment2: 
+        technologies: "MongoDB, Mongoose, React, Express.JS, GraphQL, Auth(JWT), Deployed on Heroku",
+        link_deploy: "https://hybee-book-search-engine-e306e54d030c.herokuapp.com/",        // Remove if not deployed
+        link_github: "https://github.com/hybee234/book-search-engine",                          // Remove if GitHub repository is private
+    },
+*/
 const apps = [
     {
         id: 1,
@@ -35,12 +49,14 @@ const apps = [
     },
     {
         id: 4,
-        title: "Huber's Tech Blog",
-        description: "A tech blog forum to share and comment on the latest technology",
-        image: "/assets/images/techblog.png",
-        technologies: "MySQL, Express, BCrypt, Dotenv, Tailwind CSS",
-        link_deploy: "https://huber-tech-blog-ed7fd58460b2.herokuapp.com/",
-        link_github: "https://github.com/hybee234/tech-blog",
+        title: "Book Search Engine",
+        description: "A basic MERN stack application",
+        image: "/assets/images/MERN.png",
+        //comment1: 
+        //comment2: 
+        technologies: "MongoDB, Mongoose, React, Express.JS, GraphQL, Auth(JWT), Deployed on Heroku",
+        link_deploy: "https://hybee-book-search-engine-e306e54d030c.herokuapp.com/",        // Remove if not deployed
+        link_github: "https://github.com/hybee234/book-search-engine",                          // Remove if GitHub repository is private
     },
     {
         id: 5,
