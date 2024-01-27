@@ -3,6 +3,15 @@ import ResumeDownload from './../components/Resume-download'
 
 export default function Resume() {
 
+
+/*
+
+Search for iconify icons here https://icon-sets.iconify.design/ add it with key: "iconify_component"
+Otherwise upload your own image and give it a key of "img:"
+If you need a white background to enhance the icon then add a property of "background: "yes"
+
+*/
+
     const skills = [
         {
             id: "1",
@@ -117,6 +126,12 @@ export default function Resume() {
                     img: "/assets/images/nodemailer.png",
                     url: "https://nodemailer.com/",
                     title: "Nodemailer",
+                },
+                {                    
+                    id: "12",
+                    iconify_component: "logos:jwt-icon",
+                    url: "https://jwt.io/",
+                    title: "JWT",
                 },
             ],
         },
